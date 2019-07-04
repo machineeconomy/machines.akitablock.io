@@ -2,27 +2,22 @@
   <header>
     <div class="contain">
       <navigation/>
-      <information/>
-      <div class="header__button">
-        <StandartButton/>
+      <div class="block">
+        <information/>
       </div>
     </div>
-    <backgroundLine/>
+    <div class="background__line"></div>
   </header>
 </template>
 <script>
 import Navigation from "./components/Navigation";
 import Information from "./components/Information";
-import StandartButton from "./components/StandartButton";
-import BackgroundLine from "./components/BackgroundLine";
 
 export default {
   name: "Header",
   components: {
     Navigation,
-    Information,
-    StandartButton,
-    BackgroundLine
+    Information
   }
 };
 </script>
@@ -35,28 +30,24 @@ header {
   position: relative;
   font-family: "Roboto", sans-serif;
   margin-bottom: 200px;
+  padding-bottom: 120px;
 }
 
-.header__button {
+.background__line {
+  height: 120px;
   width: 100%;
-  height: 210px;
-  margin-left: 40px;
-}
-
-@media (max-width: 1400px) {
-  .header__button {
-    height: 140px;
-  }
+  position: absolute;
+  bottom: -1px;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 49%, white 51%);
 }
 
 @media (max-width: 900px) {
   header {
       margin-bottom: 70px;
   }
-}
-@media (max-width: 425px) {
-  .header__button {
-    margin-left: 0px;
+  
+  .background__line {
+    height: 60px;
   }
 }
 </style>

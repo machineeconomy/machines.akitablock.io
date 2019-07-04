@@ -40,6 +40,7 @@ ul {
   font-size: 70px;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
+  line-height: 1.2;
 }
 
 .text {
@@ -88,6 +89,10 @@ ul {
 @media (max-width: 425px) {
   .title {
     font-size: 32px;
+  }
+
+  .contain {
+    padding: 0 15px;
   }
 }
 </style>

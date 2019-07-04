@@ -1,34 +1,29 @@
 <template>
   <main>
+    <problem />
+    <deliveryRoadmap />
+    <services />
+    <team />
   </main>
 </template>
+
 <script>
+import Problem from "./components/Problem";
+import DeliveryRoadmap from "./components/DeliveryRoadmap";
+import Services from "./components/Services";
+import Team from "./components/Team"
 
 export default {
   name: "Main",
-  components: { },
-  data() {
-    return {
-     
-    };
+  components: { 
+    Problem,
+    DeliveryRoadmap,
+    Services,
+    Team
   }
 };
 </script>
 
 <style lang="scss" scoped>
-.main-margin {
-  margin-bottom: 200px;
-}
-
-ol {
-  color: #000;
-  font-weight: lighter;
-}
-
-p {
-  color: black;
-  margin: 0;
-}
-
 
 </style>
