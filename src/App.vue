@@ -50,6 +50,22 @@ ul {
   font-family: "Roboto", sans-serif;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.lighter {
+  font-weight:lighter;
+}
+
+.right {
+  text-align: right;
+}
+
 @media (max-width:1500px)  {
   .title {
     font-size: 64px;
