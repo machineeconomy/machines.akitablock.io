@@ -32,31 +32,38 @@ export default {
     return {
       navigation: [
         {
-          text: "Live Demo",
+          text: "Problem",
           liClass: "navigation__item navigation__element",
           aClass: "navigation__link text",
-          path: ".LiveDemo",
-          block: "start"
+          path: ".problem",
+          block: window.innerWidth > 1000 ? "center" : "start"
         },
         {
-          text: "M2M Supply Chain",
+          text: "Delivery Roadmap",
           liClass: "navigation__item navigation__element",
           aClass: "navigation__link text",
-          path: ".M2MSupplyChain",
+          path: ".deliveryRoadmap",
           block: "start"
         },
         {
           text: "Services",
           liClass: "navigation__item navigation__element",
           aClass: "navigation__link text",
-          path: ".Services",
+          path: ".services",
+          block: window.innerWidth > 1000 ? "center" : "start"
+        },
+        {
+          text: "Team",
+          liClass: "navigation__item navigation__element",
+          aClass: "navigation__link text",
+          path: ".team",
           block: window.innerWidth > 1000 ? "center" : "start"
         },
         {
           text: "Engage Now",
           liClass: "navigation__item navigation__element",
           aClass: "navigation__link text",
-          path: ".EngageNow",
+          path: ".engageNow",
           block: "start"
         }
       ]

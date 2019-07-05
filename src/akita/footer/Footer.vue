@@ -1,5 +1,5 @@
 <template>
-  <footer class="EngageNow">
+  <footer class="engageNow">
     <div class="contain">
       <div class="footer__information">
         <h3 class="title">The time to engage is now.</h3>

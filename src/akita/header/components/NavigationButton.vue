@@ -28,31 +28,38 @@ export default {
     return {
       navigation: [
         {
-          text: "Live Demo",
+          text: "Problem",
           liClass: "navigation__item popup__item",
           aClass: "popup__link text",
-          path: ".LiveDemo",
+          path: ".problem",
           block: "start"
         },
         {
-          text: "M2M Supply Chain",
+          text: "Delivery Roadmap",
           liClass: "navigation__item popup__item",
           aClass: "popup__link text",
-          path: ".M2MSupplyChain",
+          path: ".deliveryRoadmap",
           block: "start"
         },
         {
           text: "Services",
           liClass: "navigation__item popup__item",
           aClass: "popup__link text",
-          path: ".Services",
-          block: window.innerWidth > 1000 ? "center" : "start"
+          path: ".services",
+          block: "start"
+        },
+        {
+          text: "Team",
+          liClass: "navigation__item popup__item",
+          aClass: "popup__link text",
+          path: ".team",
+          block: "start"
         },
         {
           text: "Engage Now",
           liClass: "navigation__item popup__item",
           aClass: "popup__link text",
-          path: ".EngageNow",
+          path: ".engageNow",
           block: "start"
         }
       ]
@@ -104,7 +111,7 @@ export default {
 }
 
 .popup__item {
-  padding: 5px 20px;
+  padding: 3px 20px;
 }
 
 .popup__link {
