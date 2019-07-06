@@ -7,26 +7,22 @@
       <div class="roadmap__left">
         <ul>
           <li v-for="item in roadmap">
-            <template v-if="item.left">
-                <div class="block" :style="{ 'margin-top': item.margin + 'px' }">
-                <p class="text bold right">{{item.year}}</p>
-                <h4 class="text bold right">{{item.title}}</h4>
-                <p class="text normal">{{item.text}}</p>
-              </div>
-            </template>
+            <div class="block" v-show="item.left" :style="{ 'margin-top': item.margin + 'px' }">
+              <p class="text bold right">{{item.year}}</p>
+              <h4 class="text bold right">{{item.title}}</h4>
+              <p class="text normal">{{item.text}}</p>
+            </div>
           </li>
         </ul>
       </div>
       <div class="roadmap__right">
         <ul>
           <li v-for="item in roadmap">
-            <template v-if="!item.left">
-                <div class="block" :style="{ 'margin-top': item.margin + 'px' }">
-                <p class="text bold">{{item.year}}</p>
-                <h4 class="text bold">{{item.title}}</h4>
-                <p class="text normal">{{item.text}}</p>
-              </div>
-            </template>
+            <div class="block" v-if="!item.left" :style="{ 'margin-top': item.margin + 'px' }">
+              <p class="text bold">{{item.year}}</p>
+              <h4 class="text bold">{{item.title}}</h4>
+              <p class="text normal">{{item.text}}</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -114,5 +110,39 @@ export default {
 
   h4 {
     margin: 5px 0 20px;
+  }
+
+  @media(max-width: 1000px) {
+    .roadmap {
+      margin: 30px 0;
+    }
+
+    .roadmap__left {
+      padding-left: 0;
+    }
+
+    .roadmap__right {
+      padding-right: 0;
+    }
+  }
+
+  @media(max-width: 600px) {
+    .roadmap {
+      margin: 30px 0;
+    }
+
+    .roadmap__left {
+      border: none;
+      padding: 50px 0;
+    }
+
+    .roadmap__right {
+      display: none;
+    }
+
+    .block {
+      margin-top: 100px !important;
+      display: block !important;
+    }
   }
 </style>

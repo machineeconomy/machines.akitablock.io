@@ -55,8 +55,8 @@ export default {
   }
 
   .basic, .premium, .custom {
-    width: 250px;
-    height: 450px;
+    width: 300px;
+    height: 500px;
     border-radius: 20px;
   }
 
@@ -92,13 +92,13 @@ export default {
     border-radius: 10px;
     position: absolute;
     bottom: 10%;
-    left: 25px;
+    left: 50px;
   }
 
   .block {
     background-color: #F2F2F2;
     width: 100%;
-    height: 390px;
+    height: 440px;
     margin-top: 25px;
     padding: 10px;
     position: relative;
@@ -107,13 +107,13 @@ export default {
     }
   }
 
-  @media(max-width: 950px) {
+  @media(max-width: 1100px) {
   .custom {
-      margin-left: 150px;
+      margin-left: 175px;
     }
   }
 
-  @media(max-width: 700px) {
+  @media(max-width: 800px) {
     .blocks {
       flex-direction: column;
     }
@@ -126,6 +126,19 @@ export default {
   @media(max-width: 500px) {
     .basic, .premium {
       margin: 20px auto;
+    }
+
+    .basic, .premium, .custom {
+      width: 250px;
+      height: 450px;
+    }
+
+    button {
+      left: 25px;
+    }
+
+    .block {
+      height: 390px;
     }
   }
 
