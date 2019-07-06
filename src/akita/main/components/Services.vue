@@ -14,17 +14,17 @@
         </div>
         <div class="premium">
           <div class="block">
-            <p class="text normal">PoC</p>
-            <p class="text normal">existing business</p>
-            <p class="text normal">Project based</p>
+            <p class="text normal">Lab (virtual an physical)</p>
+            <p class="text normal">New business</p>
+            <p class="text normal">Monthly member ships plus project based custom builds</p>
             <button class="btn ntn-1 btn-info">Premium</button>
           </div>
         </div>
         <div class="custom">
           <div class="block">
-            <p class="text normal">PoC</p>
-            <p class="text normal">existing business</p>
-            <p class="text normal">Project based</p>
+            <p class="text normal">Product</p>
+            <p class="text normal">New business</p>
+            <p class="text normal">Monthly/ yearly revenue through service/ license charge</p>
             <button class="btn ntn-1 btn-danger">Custom</button>
           </div>
         </div>
@@ -56,7 +56,7 @@ export default {
 
   .basic, .premium, .custom {
     width: 250px;
-    height: 400px;
+    height: 450px;
     border-radius: 20px;
   }
 
@@ -98,7 +98,7 @@ export default {
   .block {
     background-color: #F2F2F2;
     width: 100%;
-    height: 340px;
+    height: 390px;
     margin-top: 25px;
     padding: 10px;
     position: relative;
@@ -125,7 +125,7 @@ export default {
 
   @media(max-width: 500px) {
     .basic, .premium {
-      margin-right: 0;
+      margin: 20px auto;
     }
   }
 

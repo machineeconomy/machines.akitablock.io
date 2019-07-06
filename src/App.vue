@@ -41,6 +41,7 @@ ul {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   line-height: 1.2;
+  color: #000;
 }
 
 .text {
@@ -48,6 +49,7 @@ ul {
   line-height: 1.3;
   margin-bottom: 0;
   font-family: "Roboto", sans-serif;
+  color: #000;
 }
 
 .bold {
