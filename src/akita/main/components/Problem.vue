@@ -9,7 +9,7 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iure praesentium magnam ad! Ipsum cum possimus expedita nobis minus perferendis dolorum quisquam, enim, voluptas quidem repellendus nam aspernatur delectus quasi.                        
                     </p>
                 </div>
-                <div class="block img">img</div>
+                <img class="block img" src="https://png.pngtree.com/element_origin_min_pic/16/12/07/a6a111a709389f9729f7b5df560f31d3.jpg" alt="">
                 <div class="block">
                     <h4 class="text title">Reality check</h4>
                     <p class="text fontWeight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iure praesentium magnam ad! Ipsum cum possimus expedita nobis minus perferendis dolorum quisquam, enim, voluptas quidem repellendus nam aspernatur delectus quasi.
@@ -54,9 +54,7 @@ export default {
     }
 
     .img {
-        background-color: grey;
         width: 400px;
-        height: 400px;
     }
 
     @media (max-width: 1000px) {

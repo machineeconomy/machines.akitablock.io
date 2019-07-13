@@ -61,8 +61,8 @@ export default {
           title: "Industry 4.0 Audit Trail",
           text: "Fujitsu presented the worlds first live Production Audit Trail showcase at the HMI 2018 with components and robots. The complete blockchain software integration was delivered by AKITA as official supplier.",
           description: "Dominated Social Media #HMI with more 4.5 million organic impressions in 3 days on twitter alone.",
-          img: "http://www.imgworlds.com/wp-content/uploads/2015/12/18-CONTACTUS-HEADER.jpg",
-          alt: "gumball",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmtlOau9rrVih-xbzQg-LLpauw8JoRCt9itEvxhD3WYV_A3Vv",
+          alt: "img",
           margin: 350
         },
         {
@@ -72,8 +72,8 @@ export default {
           title: "ID & Access Solution",
           text: "A global personal ID combined with cutting edge biometric tech was build in cooperation with the e-shelter innovation lab. Registration, Authentication and tamper proof access log files. ",
           description: "Nominated for the German Data Center Innovation Award.",
-          img: "http://www.imgworlds.com/wp-content/uploads/2015/12/18-CONTACTUS-HEADER.jpg",
-          alt: "gumball",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmtlOau9rrVih-xbzQg-LLpauw8JoRCt9itEvxhD3WYV_A3Vv",
+          alt: "img",
           margin: 150
         },
         {
@@ -83,8 +83,8 @@ export default {
           title: "Automated M2M payment",
           text: "Modular machine-to-machine payment prototypes presented live on stage. The car pays a micro transaction based on the real time parking duration, triggering the parking space to an automated tax payment.",
           description: "AKITA was invited with 19 other companies out of 700 applications to the Dubai Future Blockchain Summit.",
-          img: "http://www.imgworlds.com/wp-content/uploads/2015/12/18-CONTACTUS-HEADER.jpg",
-          alt: "gumball",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmtlOau9rrVih-xbzQg-LLpauw8JoRCt9itEvxhD3WYV_A3Vv",
+          alt: "img",
           margin: 350
         },
         {
@@ -94,8 +94,8 @@ export default {
           title: "Virtual Blockchain Lab",
           text: "The Virtual Lab demonstrates blockchain based live Use Cases in a fast and easy to use test environment. The perfect opportunity for corporates to to gain valuable experience fast and without any risks.",
           description: "Our corporate partner network signed on the first clients and it is growing fast now.",
-          img: "http://www.imgworlds.com/wp-content/uploads/2015/12/18-CONTACTUS-HEADER.jpg",
-          alt: "gumball",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmtlOau9rrVih-xbzQg-LLpauw8JoRCt9itEvxhD3WYV_A3Vv",
+          alt: "img",
           margin: 350
         },
         {
@@ -105,8 +105,8 @@ export default {
           title: "Physical Blockchain Lab ",
           text: "We are pioneers in hardware integration to blockchain based software and services. Our strength linked to the modular design of the virtual lab will allow seamless transfer to physical applications.",
           description: "Established collaboration with universities, signed NDAs with corporates from automotive, OEM and energy sectors.",
-          img: "http://www.imgworlds.com/wp-content/uploads/2015/12/18-CONTACTUS-HEADER.jpg",
-          alt: "gumball",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmtlOau9rrVih-xbzQg-LLpauw8JoRCt9itEvxhD3WYV_A3Vv",
+          alt: "img",
           margin: 350
         },
         {
@@ -116,8 +116,8 @@ export default {
           title: "Machine Bank",
           text: "The mainstream breakthrough will be driven by previous projects like ours and real world productive applications that deliver on the promises of blockchain: shared, global, fast, cost efficient and more secure.",
           description: "Fully autonomous driving cars, buying and offering services to other machines and turning your car into an asset will be game changer.",
-          img: "http://www.imgworlds.com/wp-content/uploads/2015/12/18-CONTACTUS-HEADER.jpg",
-          alt: "gumball",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmtlOau9rrVih-xbzQg-LLpauw8JoRCt9itEvxhD3WYV_A3Vv",
+          alt: "img",
           margin: 350
         },
         {
@@ -127,8 +127,8 @@ export default {
           title: "Machine Economy",
           text: "Our modular service architecture enables us to extend functions,, services, network, infrastructures in all directions.",
           description: "AKITA’s first mover initiative will provide partners, investors and clients a unique position in the new markets.",
-          img: "http://www.imgworlds.com/wp-content/uploads/2015/12/18-CONTACTUS-HEADER.jpg",
-          alt: "gumball",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdmtlOau9rrVih-xbzQg-LLpauw8JoRCt9itEvxhD3WYV_A3Vv",
+          alt: "img",
           margin: 350
         }
       ]
