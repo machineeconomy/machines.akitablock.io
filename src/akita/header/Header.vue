@@ -1,53 +1,184 @@
 <template>
   <header>
     <div class="contain">
-      <navigation/>
-      <div class="block">
-        <information/>
+      <div class="logo title">machines</div>
+      <h1 class="title">Machine bank<br/>beyond blockchain</h1>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cumque ipsa quis repellat ut qui ipsam porro, eveniet, beatae dolorem architecto repellendus vero ullam eum. Ullam reiciendis autem unde veniam.</p>
+      <div class="btn__trailer" @click="popup">
+        <div class="triangle"></div>  
+        <span>Watch Trailer</span>
       </div>
     </div>
-    <div class="background__line"></div>
+    <transition>
+      <div class="popup__bg" v-show="isOpen" @click="popup">
+        <div class="popup">
+          <iframe class="trailer" src="https://player.vimeo.com/video/341052776?autoplay=1&color=ffffff&title=0&byline=0&portrait=0" frameborder="1" allow="fullscreen" allowfullscreen></iframe>
+          <div class="btn__close">
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </transition>
   </header>
 </template>
 <script>
-import Navigation from "./components/Navigation";
-import Information from "./components/Information";
 
 export default {
   name: "Header",
-  components: {
-    Navigation,
-    Information
+  data() {
+    return {
+      isOpen: false
+    }
+  },
+  methods: {
+    popup() {
+      this.isOpen = !this.isOpen
+    }
   }
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 header {
-  background: url("./../../../public/chain.png") no-repeat,
-    linear-gradient(to top left, #0BC5FE 0%, #5f46b1 50%, #ff2ea0 100%);
-  background-size: cover;
+  background: linear-gradient(to top left, #0BC5FE 0%, var(--violet) 40%, #ff2ea0 100%);
   position: relative;
+  padding-bottom: 100px;
+}
+
+.logo {
+  display: block;
+  width: 200px;
+  height: 50px;
+  position: relative;
+  top: 50px;
+  margin-bottom: 250px;
+  color: #fff;
+}
+
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+p {
+  color: #fff;
+  width: 60%;
+  margin-bottom: 100px;
+}
+
+.btn__trailer {
+  position: relative;
+  color: #fff;
+  font-size: 22px;
+  width: 250px;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 200px;
-  padding-bottom: 120px;
+  padding: 10px;
+  text-align: center;
+  background: rgba(0,0,0,0);
+  border: 1px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s;
+  display: flex;
+  justify-content: center;
+  .triangle {
+    height: 7px;
+    border: 7px solid transparent;	
+    border-left: 15px solid #fff;
+    position: relative;
+    top: 10px;
+    transition: .4s;
+  }
+  &:hover {
+    background: #fff;
+    color: var(--dark);
+    .triangle {
+      border-left-color: var(--dark);
+    }
+  }
 }
 
-.background__line {
-  height: 120px;
+.popup__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  position: absolute;
-  bottom: -1px;
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 49%, white 51%);
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  z-index: 10;
+  display: flex;
 }
 
-@media (max-width: 900px) {
-  header {
-      margin-bottom: 70px;
+.popup {
+  margin: auto;
+  padding: 30px;
+  position: relative;
+}
+
+.trailer {
+  width: 1200px;
+  height: 676px;
+  border-radius: 10px;
+}
+
+.btn__close {
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  .line {
+    margin: auto;
+    position: absolute;
+    left: 7.5px;
+    width: 5px;
+    height: 20px;
+    background: #fff;
+    border-radius: 10px;
+    transform: rotate(45deg);
+    &:nth-child(1) {
+      transform: rotate(-45deg);
+    }
   }
-  
-  .background__line {
-    height: 60px;
+  &:hover {
+    .line {
+      transition: .2s;
+      background: var(--dark);
+    }
   }
 }
+
+@media (max-width: 1300px) {
+  .trailer {
+    width: 900px;
+    height: 507px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .trailer {
+    width: 600px;
+    height: 338px;
+  }
+}
+
+@media (max-width: 700px) {
+  .trailer {
+    width: 400px;
+    height: 225px;
+  }
+}
+
+@media (max-width: 500px) {
+  .trailer {
+    width: 300px;
+    height: 169px;
+  }
+  .popup {
+    padding: 30px 10px 0 0;
+  }
+}
+
 </style>

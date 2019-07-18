@@ -15,14 +15,14 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 
 :root {
-  --akita-primary: #5f46b1;
-  --akita-secondary: #eb479d;
-  --akita-blue: #0BC5FE;
-  --akita-dark: #3D4449;
-  --akita-light: #EFEFEF;
+  --violet: #7030a0;
+  --pink: #ff2ea0;
+  --blue: #00b0f0;
+  --dark: #3b3838;
+  --grey: #d9d9d9;
 }
 
 .contain {
@@ -34,6 +34,13 @@ export default {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+button, button:active, button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
 }
 
 .title {
