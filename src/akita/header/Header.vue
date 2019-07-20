@@ -3,16 +3,20 @@
     <div class="contain">
       <div class="logo title">machines</div>
       <h1 class="title">Machine bank<br/>beyond blockchain</h1>
-      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cumque ipsa quis repellat ut qui ipsam porro, eveniet, beatae dolorem architecto repellendus vero ullam eum. Ullam reiciendis autem unde veniam.</p>
+      <div class="info">
+        <p class="text normal">Blockchain promised faster, cheaper and global transactions.</p>
+        <p class="text normal">Machine bank accounts for cars, drones, gas stations and other devices enable to machines to directly buy & sell machine-to-machine(M2M) services. Machine economy.</p>
+        <p class="text normal">Turn your car into an asset.</p>
+      </div>
       <div class="btn__trailer" @click="popup">
         <div class="triangle"></div>  
         <span>Watch Trailer</span>
       </div>
     </div>
-    <transition>
-      <div class="popup__bg" v-show="isOpen" @click="popup">
+    <transition name="trailer__popup">
+      <div class="popup__bg" v-if="isOpen" @click="popup">
         <div class="popup">
-          <iframe class="trailer" src="https://player.vimeo.com/video/341052776?autoplay=1&color=ffffff&title=0&byline=0&portrait=0" frameborder="1" allow="fullscreen" allowfullscreen></iframe>
+          <iframe class="trailer" id="trailer" src="https://player.vimeo.com/video/341052776?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
           <div class="btn__close">
             <div class="line"></div>
             <div class="line"></div>
@@ -41,9 +45,10 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  background: linear-gradient(to top left, #0BC5FE 0%, var(--violet) 40%, #ff2ea0 100%);
+  background: linear-gradient(to top left, var(--akita-blue) 0%, var(--akita-violet) 40%, var(--akita-pink) 100%);
   position: relative;
-  padding-bottom: 100px;
+  min-height: 100vh;
+  padding-bottom: 5%;
 }
 
 .logo {
@@ -51,20 +56,24 @@ header {
   width: 200px;
   height: 50px;
   position: relative;
-  top: 50px;
-  margin-bottom: 250px;
+  top: 25px;
+  margin-bottom: 20vh;
   color: #fff;
 }
 
 h1 {
   color: #fff;
   text-transform: uppercase;
+  margin-bottom: 3vh;
+}
+
+.info {
+  width: 60%;
+  margin-bottom: 15vh;
 }
 
 p {
   color: #fff;
-  width: 60%;
-  margin-bottom: 100px;
 }
 
 .btn__trailer {
@@ -150,6 +159,13 @@ p {
   }
 }
 
+.trailer__popup-enter-active, .trailer__popup-leave-active {
+  transition: opacity .5s;
+}
+.trailer__popup-enter, .trailer__popup-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+}
+
 @media (max-width: 1300px) {
   .trailer {
     width: 900px;
@@ -168,6 +184,9 @@ p {
   .trailer {
     width: 400px;
     height: 225px;
+  }
+  .info {
+    width: 100%;
   }
 }
 

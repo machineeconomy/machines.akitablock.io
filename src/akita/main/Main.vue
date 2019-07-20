@@ -1,6 +1,6 @@
 <template>
   <main>
-    <problem />
+    <Evolution />
     <deliveryRoadmap />
     <services />
     <team />
@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Problem from "./components/Problem";
+import Evolution from "./components/Evolution";
 import DeliveryRoadmap from "./components/DeliveryRoadmap";
 import Services from "./components/Services";
 import Team from "./components/Team"
@@ -16,7 +16,7 @@ import Team from "./components/Team"
 export default {
   name: "Main",
   components: { 
-    Problem,
+    Evolution,
     DeliveryRoadmap,
     Services,
     Team
@@ -25,5 +25,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+  main {
+    background: var(--grey);
+  }
 </style>

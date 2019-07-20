@@ -18,11 +18,11 @@ export default {
 <style lang="scss">
 
 :root {
-  --violet: #7030a0;
-  --pink: #ff2ea0;
-  --blue: #00b0f0;
-  --dark: #3b3838;
-  --grey: #d9d9d9;
+  --akita-violet: #7030a0;
+  --akita-pink: #FF2EA0;
+  --akita-blue: #00b0f0;
+  --akita-dark: #3b3838;
+  --akita-grey: #d9d9d9;
 }
 
 .contain {
