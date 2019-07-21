@@ -11,26 +11,13 @@
             <ul class="list">
                 <li class="text list__item" v-for="item in list" :key="item.id">{{item.text}}</li>
             </ul>
-            <div class="animation">
-                <u-animate-container>
-                    <u-animate name="fadeInRight" duration="2s">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/63/IMG_%28business%29.svg/1200px-IMG_%28business%29.svg.png" alt="img">
-                    </u-animate>
-                </u-animate-container>
-            </div>
         </div>
     </section>
 </template>
 
 <script>
-    import {UAnimateContainer, UAnimate} from 'vue-wow'
-
     export default {
         name: "Evolution",
-        components: {
-            UAnimateContainer,
-            UAnimate
-        },
         data() {
             return {
                 list: [
@@ -64,7 +51,6 @@
 
     .evolution {
         min-height: 100vh;
-        position: relative;
     }
 
     h2 {
@@ -78,15 +64,6 @@
     .list__item {
         padding: 5vh 13vh 0;
         color: var(--akita-pink)
-    }
-
-    .animation {
-        position: absolute;
-        top: 300px;
-        right: 100px;
-        img {
-            width: 500px;
-        }
     }
 </style>
 

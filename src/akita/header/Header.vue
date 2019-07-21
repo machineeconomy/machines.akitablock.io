@@ -57,7 +57,7 @@ header {
   height: 50px;
   position: relative;
   top: 25px;
-  margin-bottom: 20vh;
+  margin-bottom: 15vh;
   color: #fff;
 }
 
@@ -160,7 +160,7 @@ p {
 }
 
 .trailer__popup-enter-active, .trailer__popup-leave-active {
-  transition: opacity .5s;
+  transition: opacity 1s;
 }
 .trailer__popup-enter, .trailer__popup-leave-to /* .fade-leave-active до версии 2.1.8 */ {
   opacity: 0;
