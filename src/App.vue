@@ -44,8 +44,8 @@ button::-moz-focus-inner {
 }
 
 .title {
-  font-size: 70px;
-  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   line-height: 1.2;
   color: #000;
@@ -55,7 +55,7 @@ button::-moz-focus-inner {
   font-size: 22px;
   line-height: 1.3;
   margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #000;
 }
 
@@ -76,9 +76,6 @@ button::-moz-focus-inner {
 }
 
 @media (max-width:1500px)  {
-  .title {
-    font-size: 64px;
-  }
   .text {
     font-size: 20px;
   }
@@ -86,16 +83,7 @@ button::-moz-focus-inner {
 
 @media (max-width: 1250px) {
   .title {
-    font-size: 54px;
-  }
-  .text {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 1250px) {
-  .title {
-    font-size: 48px;
+    font-size: 40px;
   }
   .text {
     font-size: 18px;
@@ -104,7 +92,7 @@ button::-moz-focus-inner {
 
 @media (max-width: 768px) {
   .title {
-    font-size: 40px;
+    font-size: 30px;
   }
   .text {
     font-size: 16px;
@@ -113,7 +101,7 @@ button::-moz-focus-inner {
 
 @media (max-width: 425px) {
   .title {
-    font-size: 32px;
+    font-size: 25px;
   }
 
   .contain {

@@ -1,92 +1,90 @@
 <template>
-    <section class="evolution">
-        <div class="contain">
-            <h2 class="title">The evolution of machines</h2>
-            <div class="info">
-                <p class="text normal">Machines wew invented to increase productivity.</p>
-                <p class="text normal">They evolved during the industial revolution.</p>
-                <p class="text normal">Today we already have 3 times more smart devices<br/> than humans on our planet with a rapid growth tendency.</p>
-            </div>
-            <p class="text normal">Reality shows that machines keep us busy:</p>
-            <ul class="list">
-                <li class="text list__item" v-for="item in list" :key="item.id">{{item.text}}</li>
-            </ul>
-            <div class="animation">
-                <u-animate-container>
-                    <u-animate name="fadeInRight" duration="2s">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/63/IMG_%28business%29.svg/1200px-IMG_%28business%29.svg.png" alt="img">
-                    </u-animate>
-                </u-animate-container>
-            </div>
-        </div>
-    </section>
+  <section class="evolution">
+    <div class="contain">
+      <p class="text top">
+        Machines were invented to increase productivity. Since the industrial revolution they have increased in numbers, became
+        smart and improved our lives in countless ways. On the downside is takes a lot of work and effort to manage all of these devices:
+      </p>
+      <h2 class="title">
+        Do we control the machines
+        <br />or do they control us?
+      </h2>
+      <ul class="list">
+        <li class="text list__item" v-for="item in list" :key="item.id">{{item.text}}</li>
+      </ul>
+    </div>
+  </section>
 </template>
 
 <script>
-    import {UAnimateContainer, UAnimate} from 'vue-wow'
+import { UAnimateContainer, UAnimate } from "vue-wow";
 
-    export default {
-        name: "Evolution",
-        components: {
-            UAnimateContainer,
-            UAnimate
+export default {
+  name: "Evolution",
+  components: {
+    UAnimateContainer,
+    UAnimate
+  },
+  data() {
+    return {
+      list: [
+        {
+          text:
+            "Machines have to be managed and updated to run correctly. Security of valuable information and data can be guaranteed.",
+          img: "#",
+          id: 1
         },
-        data() {
-            return {
-                list: [
-                    {
-                        text: "manage and update",
-                        img: "#",
-                        id: 1
-                    },
-                    {
-                        text: "secondary systems and fees",
-                        img: "#",
-                        id: 2
-                    },
-                    {
-                        text: "convert data",
-                        img: "#",
-                        id: 3
-                    },
-                    {
-                        text: "no global standarts",
-                        img: "#",
-                        id: 4
-                    },
-                ]
-            }
+        {
+          text: "Just-in-time and global production is an industry standard.",
+          img: "#",
+          id: 2
+        },
+        {
+          text:
+            "Machines depend on financial service providers and traditional banks that charge enormous fees, do not operate on the weekends and take days to process cross-country transactions.",
+          img: "#",
+          id: 3
+        },
+        {
+          text:
+            "There are no global standards or networks architectures. Convert data form sources, formats and mediums like paper.",
+          img: "#",
+          id: 4
         }
-    }
+      ]
+    };
+  }
+};
 </script>
 
 <style lang="scss" scoped>
+.evolution {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 10vh;
+}
 
-    .evolution {
-        min-height: 100vh;
-        position: relative;
-    }
+.top {
+  padding: 5vh 10vh 0 0;
+}
 
-    h2 {
-        margin: 10vh 0 5vh;
-    }
+h2 {
+  margin: 3vh 0;
+  color: var(--akita-pink);
+}
 
-    .info {
-        margin-bottom: 5vh;
-    }
+.list {
+    width: 60%;
+}
 
-    .list__item {
-        padding: 5vh 13vh 0;
-        color: var(--akita-pink)
-    }
+.list__item {
+  padding: 3vh 0 0 10vh ;
+}
 
-    .animation {
-        position: absolute;
-        top: 300px;
-        right: 100px;
-        img {
-            width: 500px;
-        }
-    }
+@media (max-width: 900px) {
+  .list {
+    width: 100%;
+}
+}
 </style>
 

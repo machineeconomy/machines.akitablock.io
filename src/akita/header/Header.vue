@@ -1,17 +1,22 @@
 <template>
   <header>
+    <!--Почитать про взаимодействиек компонентов, сделать Trailer, NavigationButton-->
     <div class="contain">
-      <div class="logo title">machines</div>
+      <div class="top">
+        <div class="logo title">Machines</div>
+        <Navigation />
+      </div>
       <h1 class="title">Machine bank<br/>beyond blockchain</h1>
       <div class="info">
         <p class="text normal">Blockchain promised faster, cheaper and global transactions.</p>
-        <p class="text normal">Machine bank accounts for cars, drones, gas stations and other devices enable to machines to directly buy & sell machine-to-machine(M2M) services. Machine economy.</p>
+        <p class="text normal">Machine bank accounts for cars, drones, gas stations and other devices enable to machines to directly buy & sell machine-to-machine (M2M) services. Machine economy.</p>
         <p class="text normal">Turn your car into an asset.</p>
       </div>
       <div class="btn__trailer" @click="popup">
         <div class="triangle"></div>  
         <span>Watch Trailer</span>
       </div>
+      <div class="background"></div>
     </div>
     <transition name="trailer__popup">
       <div class="popup__bg" v-if="isOpen" @click="popup">
@@ -26,10 +31,15 @@
     </transition>
   </header>
 </template>
+
 <script>
+import Navigation from "./components/Navigation";
 
 export default {
   name: "Header",
+  components: {
+    Navigation
+  },
   data() {
     return {
       isOpen: false
@@ -51,29 +61,41 @@ header {
   padding-bottom: 5%;
 }
 
+.top {
+  padding-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
-  display: block;
-  width: 200px;
-  height: 50px;
-  position: relative;
-  top: 25px;
-  margin-bottom: 15vh;
   color: #fff;
+  text-transform: uppercase;
+  flex: 1 1 auto;
 }
 
 h1 {
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 3vh;
+  margin: 10vh 0 3vh;
 }
 
 .info {
-  width: 60%;
+  width: 50%;
   margin-bottom: 15vh;
 }
 
 p {
   color: #fff;
+}
+
+.background {
+  position: absolute;
+  right: 100px;
+  top: 10vh;
+  width: 40vw;
+  height: 40vw;
+  background: url("./../../../public/sedan.png");
+  background-size: contain;
 }
 
 .btn__trailer {
@@ -178,6 +200,9 @@ p {
     width: 600px;
     height: 338px;
   }
+  .background {
+    right: 0px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -187,6 +212,9 @@ p {
   }
   .info {
     width: 100%;
+  }
+  .background {
+    display: none;
   }
 }
 

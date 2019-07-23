@@ -1,25 +1,25 @@
 <template>
   <main>
-    <Evolution />
-    <deliveryRoadmap />
+    <evolution />
+    <roadmap />
     <services />
-    <team />
+    <people />
   </main>
 </template>
 
 <script>
 import Evolution from "./components/Evolution";
-import DeliveryRoadmap from "./components/DeliveryRoadmap";
+import Roadmap from "./components/Roadmap";
 import Services from "./components/Services";
-import Team from "./components/Team"
+import People from "./components/People"
 
 export default {
   name: "Main",
   components: { 
     Evolution,
-    DeliveryRoadmap,
+    Roadmap,
     Services,
-    Team
+    People
   }
 };
 </script>
