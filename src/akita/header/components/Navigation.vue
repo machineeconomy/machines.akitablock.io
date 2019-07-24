@@ -1,17 +1,15 @@
 <template>
-<div class="top">
-  <nav class="navigation">
-    <div class="logo title">Machines</div>
-    <ul class="list">
-      <li class="item element" v-for="li in navigation" :key="li.id">
-        <a href="#" class="link text" :path="li.path" @click.prevent="scroll">
-          {{li.text}}
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <mobileNavigation :navigation="navigation" />
-</div>
+  <div class="top">
+    <nav class="navigation">
+      <div class="logo title">Machines</div>
+      <ul class="list">
+        <li class="item element" v-for="li in navigation" :key="li.id">
+          <a href="#" class="link text" :path="li.path" @click.prevent="scroll">{{li.text}}</a>
+        </li>
+      </ul>
+    </nav>
+    <mobileNavigation :navigation="navigation" />
+  </div>
 </template>
 
 <script>
@@ -54,7 +52,7 @@ export default {
           text: "Contact",
           path: ".engage",
           id: 6
-        },
+        }
       ]
     };
   },
@@ -110,7 +108,6 @@ export default {
   .element {
     display: none;
   }
-
   .link {
     color: #000;
   }

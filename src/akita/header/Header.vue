@@ -2,14 +2,19 @@
   <header>
     <div class="contain relative">
       <Navigation />
-      <h1 class="title">Machine bank<br/>beyond blockchain</h1>
+      <h1 class="title">
+        Machine bank
+        <br />beyond blockchain
+      </h1>
       <div class="info">
         <p class="text normal">Blockchain promised faster, cheaper and global transactions.</p>
-        <p class="text normal">Machine bank accounts for cars, drones, gas stations and other devices enable to machines to directly buy & sell machine-to-machine (M2M) services. Machine economy.</p>
+        <p
+          class="text normal"
+        >Machine bank accounts for cars, drones, gas stations and other devices enable to machines to directly buy & sell machine-to-machine (M2M) services. Machine economy.</p>
         <p class="text normal">Turn your car into an asset.</p>
       </div>
       <div class="btn__trailer" @click="popup">
-        <div class="triangle"></div>  
+        <div class="triangle"></div>
         <span>Watch Trailer</span>
       </div>
       <div class="background"></div>
@@ -31,11 +36,11 @@ export default {
   data() {
     return {
       isOpen: false
-    }
+    };
   },
   methods: {
     popup() {
-      this.isOpen = !this.isOpen
+      this.isOpen = !this.isOpen;
     }
   }
 };
@@ -43,7 +48,12 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  background: linear-gradient(to top left, var(--akita-blue) 0%, var(--akita-violet) 40%, var(--akita-pink) 100%);
+  background: linear-gradient(
+    to top left,
+    var(--akita-blue) 0%,
+    var(--akita-violet) 40%,
+    var(--akita-pink) 100%
+  );
   position: relative;
   min-height: 100vh;
   padding-bottom: 100px;
@@ -82,20 +92,20 @@ p {
   font-family: "Roboto", sans-serif;
   padding: 10px;
   text-align: center;
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
   border: 1px solid #fff;
   border-radius: 10px;
   cursor: pointer;
-  transition: .4s;
+  transition: 0.4s;
   display: flex;
   justify-content: center;
   .triangle {
     height: 7px;
-    border: 7px solid transparent;	
+    border: 7px solid transparent;
     border-left: 15px solid #fff;
     position: relative;
     top: 10px;
-    transition: .4s;
+    transition: 0.4s;
   }
   &:hover {
     background: #fff;

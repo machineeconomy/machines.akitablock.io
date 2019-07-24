@@ -1,54 +1,58 @@
 <template>
   <section class="evolution">
-    <div class="contain">
+    <div class="contain relative">
       <p class="text top">
         Machines were invented to increase productivity. Since the industrial revolution they have increased in numbers, became
         smart and improved our lives in countless ways. On the downside is takes a lot of work and effort to manage all of these devices:
       </p>
-      <h2 class="title">
-        Do we control the machines
-        <br />or do they control us?
-      </h2>
-      <ul class="list">
-        <li class="text list__item" v-for="item in list" :key="item.id">{{item.text}}</li>
-      </ul>
+      <div class="column">
+        <div>
+          <h2 class="title">
+            Do we control the machines
+            <br />or do they control us?
+          </h2>
+          <ul class="list">
+            <li
+              class="text list__item"
+              v-for="item in list"
+              :key="item.id"
+              :style="{ backgroundImage: `url('${item.img}')` }"
+            >{{item.text}}</li>
+          </ul>
+        </div>
+        <img class="img" src="./../../../../public/oldMachine.jpg" alt="old machine" />
+      </div>
     </div>
   </section>
 </template>
 
 <script>
-import { UAnimateContainer, UAnimate } from "vue-wow";
-
 export default {
   name: "Evolution",
-  components: {
-    UAnimateContainer,
-    UAnimate
-  },
   data() {
     return {
       list: [
         {
           text:
             "Machines have to be managed and updated to run correctly. Security of valuable information and data can be guaranteed.",
-          img: "#",
+          img: require("./../../../../public/clock.png"),
           id: 1
         },
         {
           text: "Just-in-time and global production is an industry standard.",
-          img: "#",
+          img: require("./../../../../public/money.png"),
           id: 2
         },
         {
           text:
             "Machines depend on financial service providers and traditional banks that charge enormous fees, do not operate on the weekends and take days to process cross-country transactions.",
-          img: "#",
+          img: require("./../../../../public/people.png"),
           id: 3
         },
         {
           text:
             "There are no global standards or networks architectures. Convert data form sources, formats and mediums like paper.",
-          img: "#",
+          img: require("./../../../../public/network.png"),
           id: 4
         }
       ]
@@ -59,32 +63,56 @@ export default {
 
 <style lang="scss" scoped>
 .evolution {
-  min-height: 100vh;
   position: relative;
-  padding-bottom: 10vh;
+  padding-bottom: 100px;
 }
 
 .top {
-  padding: 5vh 10vh 0 0;
+  padding: 50px 90px 50px 0;
+}
+
+.column {
+  display: flex;
 }
 
 h2 {
-  margin: 3vh 0;
   color: var(--akita-pink);
 }
 
-.list {
-    width: 60%;
-}
-
 .list__item {
-  padding: 3vh 0 0 10vh ;
+  padding-left: 70px;
+  margin-top: 50px;
+  min-height: 50px;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: left center;
 }
 
-@media (max-width: 900px) {
-  .list {
-    width: 100%;
+.img {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
 }
+
+@media (max-width: 1300px) {
+  .top {
+    padding: 30px 90px 30px 0;
+  }
+  .img {
+    width: 475px;
+  }
+  .list__item {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .top {
+    padding: 30px 0;
+  }
+  .img {
+    display: none;
+  }
 }
 </style>
 

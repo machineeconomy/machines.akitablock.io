@@ -1,5 +1,5 @@
 <template>
-  <section class="deliveryRoadmap">
+  <section class="roadmap">
     <div class="contain">
       <h2 class="title">We are pioneers in delivering blockchain prototypes</h2>
       <p class="text normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sint temporibus libero architecto assumenda perspiciatis expedita fugiat alias totam quidem quaerat doloribus, dolores tempora molestias officiis pariatur distinctio. Tenetur, magni!</p>

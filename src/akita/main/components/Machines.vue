@@ -1,5 +1,5 @@
 <template>
-    <section class="evolution">
+    <section class="machines">
         <div class="contain">
             <h2 class="title">The evolution of machines</h2>
             <div class="info">

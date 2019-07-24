@@ -9,9 +9,7 @@
       <div class="popup" v-show="isOpen">
         <ul>
           <li class="item" v-for="li in navigation" :key="li.id">
-            <a href="#" class="link text" :path="li.path" @click.prevent="scroll">
-              {{li.text}}
-            </a>
+            <a href="#" class="link text" :path="li.path" @click.prevent="scroll">{{li.text}}</a>
           </li>
         </ul>
       </div>
@@ -22,15 +20,15 @@
 <script>
 export default {
   name: "MobileNavigation",
-  props: ['navigation'],
+  props: ["navigation"],
   data() {
     return {
       isOpen: false
-    }
+    };
   },
   methods: {
     openPopup() {
-      this.isOpen = !this.isOpen
+      this.isOpen = !this.isOpen;
     },
     scroll(e) {
       document
@@ -82,10 +80,12 @@ export default {
   display: block;
 }
 
-.animation-enter-active, .animation-leave-active {
+.animation-enter-active,
+.animation-leave-active {
   transition: opacity 1s;
 }
-.animation-enter, .animation-leave-to {
+.animation-enter,
+.animation-leave-to {
   opacity: 0;
 }
 
@@ -93,7 +93,6 @@ export default {
   .button {
     display: none;
   }
-
   .popup {
     display: none;
   }

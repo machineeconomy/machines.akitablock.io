@@ -2,7 +2,14 @@
   <transition name="animation">
     <div class="popup__bg" v-if="isOpen" @click="$emit('popup')">
       <div class="popup">
-        <iframe class="trailer" id="trailer" src="https://player.vimeo.com/video/341052776?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe
+          class="trailer"
+          id="trailer"
+          src="https://player.vimeo.com/video/341052776?title=0&byline=0&portrait=0"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
         <div class="close">
           <div class="line"></div>
           <div class="line"></div>
@@ -16,7 +23,7 @@
 export default {
   name: "Trailer",
   props: ["isOpen"]
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -26,7 +33,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,.5);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 10;
   display: flex;
 }
@@ -65,16 +72,18 @@ export default {
   }
   &:hover {
     .line {
-      transition: .2s;
+      transition: 0.2s;
       background: var(--dark);
     }
   }
 }
 
-.animation-enter-active, .animation-leave-active {
+.animation-enter-active,
+.animation-leave-active {
   transition: opacity 1s;
 }
-.animation-enter, .animation-leave-to {
+.animation-enter,
+.animation-leave-to {
   opacity: 0;
 }
 

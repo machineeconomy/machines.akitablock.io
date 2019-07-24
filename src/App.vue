@@ -80,15 +80,15 @@ button::-moz-focus-inner {
 }
 
 @media (max-width:1500px)  {
+  .title {
+    font-size: 40px;
+  }
   .text {
     font-size: 20px;
   }
 }
 
 @media (max-width: 1300px) {
-  .title {
-    font-size: 40px;
-  }
   .text {
     font-size: 18px;
   }

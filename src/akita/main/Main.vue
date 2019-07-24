@@ -1,31 +1,31 @@
 <template>
   <main>
     <evolution />
+    <bank />
+    <machines />
     <roadmap />
-    <services />
     <people />
   </main>
 </template>
 
 <script>
 import Evolution from "./components/Evolution";
+import Bank from "./components/Bank";
+import Machines from "./components/Machines";
 import Roadmap from "./components/Roadmap";
-import Services from "./components/Services";
-import People from "./components/People"
+import People from "./components/People";
 
 export default {
   name: "Main",
-  components: { 
+  components: {
     Evolution,
+    Bank,
+    Machines,
     Roadmap,
-    Services,
     People
   }
 };
 </script>
 
 <style lang="scss" scoped>
-  main {
-    background: var(--grey);
-  }
 </style>
