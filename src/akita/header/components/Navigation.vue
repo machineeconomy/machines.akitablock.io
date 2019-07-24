@@ -1,23 +1,26 @@
 <template>
+<div class="top">
   <nav class="navigation">
-    <ul class="navigation__list">
-      <li class="navigation__item navigation__element" v-for="li in navigation" :key="li.id">
-        <a href="#" class="navigation__link text" :path="li.path" @click.prevent="scroll">
+    <div class="logo title">Machines</div>
+    <ul class="list">
+      <li class="item element" v-for="li in navigation" :key="li.id">
+        <a href="#" class="link text" :path="li.path" @click.prevent="scroll">
           {{li.text}}
         </a>
       </li>
     </ul>
-    <navigationButton></navigationButton>
   </nav>
+  <mobileNavigation :navigation="navigation" />
+</div>
 </template>
 
 <script>
-import NavigationButton from "./NavigationButton";
+import MobileNavigation from "./MobileNavigation";
 
 export default {
   name: "Navigation",
   components: {
-    NavigationButton
+    MobileNavigation
   },
   data() {
     return {
@@ -66,42 +69,49 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.navigation {
-  padding-top: 1.9%;
+.top {
   position: relative;
+}
+
+.navigation {
   z-index: 10;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #fff;
+  text-transform: uppercase;
   flex: 1 1 auto;
 }
 
-.navigation__list {
+.list {
   display: flex;
+  flex: 2 1 auto;
 }
 
-.navigation__link,
-.change__language {
+.item {
+  flex: 1 1 auto;
+  padding-top: 25px;
+}
+
+.link {
   color: #fff;
   white-space: nowrap;
 }
 
-.navigation__item {
-  flex: 1 1 auto;
-}
-
-.navigation__link:hover {
+.link:hover {
   text-decoration: underline;
   color: #fff;
 }
 
-@media (max-width: 1000px) {
-  .navigation {
-    padding: 0;
-  }
-
-  .navigation__element {
+@media (max-width: 1025px) {
+  .element {
     display: none;
   }
 
-  .navigation__link {
+  .link {
     color: #000;
   }
 }

@@ -1,11 +1,7 @@
 <template>
   <header>
-    <!--Почитать про взаимодействиек компонентов, сделать Trailer, NavigationButton-->
-    <div class="contain">
-      <div class="top">
-        <div class="logo title">Machines</div>
-        <Navigation />
-      </div>
+    <div class="contain relative">
+      <Navigation />
       <h1 class="title">Machine bank<br/>beyond blockchain</h1>
       <div class="info">
         <p class="text normal">Blockchain promised faster, cheaper and global transactions.</p>
@@ -18,27 +14,19 @@
       </div>
       <div class="background"></div>
     </div>
-    <transition name="trailer__popup">
-      <div class="popup__bg" v-if="isOpen" @click="popup">
-        <div class="popup">
-          <iframe class="trailer" id="trailer" src="https://player.vimeo.com/video/341052776?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-          <div class="btn__close">
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-        </div>
-      </div>
-    </transition>
+    <trailer :isOpen="isOpen" @popup="popup" />
   </header>
 </template>
 
 <script>
 import Navigation from "./components/Navigation";
+import Trailer from "./components/Trailer";
 
 export default {
   name: "Header",
   components: {
-    Navigation
+    Navigation,
+    Trailer
   },
   data() {
     return {
@@ -58,30 +46,18 @@ header {
   background: linear-gradient(to top left, var(--akita-blue) 0%, var(--akita-violet) 40%, var(--akita-pink) 100%);
   position: relative;
   min-height: 100vh;
-  padding-bottom: 5%;
-}
-
-.top {
-  padding-top: 5vh;
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo {
-  color: #fff;
-  text-transform: uppercase;
-  flex: 1 1 auto;
+  padding-bottom: 100px;
 }
 
 h1 {
   color: #fff;
   text-transform: uppercase;
-  margin: 10vh 0 3vh;
+  margin: 150px 0 30px;
 }
 
 .info {
   width: 50%;
-  margin-bottom: 15vh;
+  margin-bottom: 150px;
 }
 
 p {
@@ -90,12 +66,12 @@ p {
 
 .background {
   position: absolute;
-  right: 100px;
-  top: 10vh;
+  right: 50px;
+  top: 100px;
   width: 40vw;
   height: 40vw;
   background: url("./../../../public/sedan.png");
-  background-size: contain;
+  background-size: 100%;
 }
 
 .btn__trailer {
@@ -184,31 +160,42 @@ p {
 .trailer__popup-enter-active, .trailer__popup-leave-active {
   transition: opacity 1s;
 }
-.trailer__popup-enter, .trailer__popup-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+.trailer__popup-enter, .trailer__popup-leave-to {
   opacity: 0;
 }
 
 @media (max-width: 1300px) {
+  h1 {
+    margin: 100px 0 20px;
+  }
+  .info {
+    margin-bottom: 80px;
+  }
+
   .trailer {
     width: 900px;
     height: 507px;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
   .trailer {
     width: 600px;
     height: 338px;
   }
   .background {
     right: 0px;
+    top: 200px;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 769px) {
   .trailer {
     width: 400px;
     height: 225px;
+  }
+  h1 {
+    margin: 130px 0 30px;
   }
   .info {
     width: 100%;

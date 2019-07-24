@@ -31,6 +31,10 @@ export default {
   margin: auto;
 }
 
+.relative {
+  position: relative;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -81,7 +85,7 @@ button::-moz-focus-inner {
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
   .title {
     font-size: 40px;
   }
@@ -99,7 +103,7 @@ button::-moz-focus-inner {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 460px) {
   .title {
     font-size: 25px;
   }

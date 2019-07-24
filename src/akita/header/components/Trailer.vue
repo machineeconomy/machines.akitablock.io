@@ -1,9 +1,9 @@
 <template>
-  <transition name="trailer__popup">
-    <div class="popup__bg" v-if="isOpen" @click="popup">
+  <transition name="animation">
+    <div class="popup__bg" v-if="isOpen" @click="$emit('popup')">
       <div class="popup">
         <iframe class="trailer" id="trailer" src="https://player.vimeo.com/video/341052776?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <div class="btn__close">
+        <div class="close">
           <div class="line"></div>
           <div class="line"></div>
         </div>
@@ -15,52 +15,11 @@
 <script>
 export default {
   name: "Trailer",
-  data() {
-    return {
-      isOpen: false
-    }
-  },
-  methods: {
-    popup() {
-      this.isOpen = !this.isOpen
-    }
-  }
+  props: ["isOpen"]
 }
 </script>
 
 <style lang="scss" scoped>
-.btn__trailer {
-  position: relative;
-  color: #fff;
-  font-size: 22px;
-  width: 250px;
-  font-family: "Roboto", sans-serif;
-  padding: 10px;
-  text-align: center;
-  background: rgba(0,0,0,0);
-  border: 1px solid #fff;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: .4s;
-  display: flex;
-  justify-content: center;
-  .triangle {
-    height: 7px;
-    border: 7px solid transparent;	
-    border-left: 15px solid #fff;
-    position: relative;
-    top: 10px;
-    transition: .4s;
-  }
-  &:hover {
-    background: #fff;
-    color: var(--dark);
-    .triangle {
-      border-left-color: var(--dark);
-    }
-  }
-}
-
 .popup__bg {
   position: fixed;
   top: 0;
@@ -84,7 +43,7 @@ export default {
   border-radius: 10px;
 }
 
-.btn__close {
+.close {
   margin: auto;
   position: absolute;
   right: 0;
@@ -112,10 +71,10 @@ export default {
   }
 }
 
-.trailer__popup-enter-active, .trailer__popup-leave-active {
+.animation-enter-active, .animation-leave-active {
   transition: opacity 1s;
 }
-.trailer__popup-enter, .trailer__popup-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+.animation-enter, .animation-leave-to {
   opacity: 0;
 }
 
@@ -137,9 +96,6 @@ export default {
   .trailer {
     width: 400px;
     height: 225px;
-  }
-  .info {
-    width: 100%;
   }
 }
 
