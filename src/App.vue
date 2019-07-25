@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view name="header" />
-    <router-view/>
+    <router-view />
     <router-view name="footer" />
   </div>
 </template>
@@ -16,10 +16,9 @@ export default {
 </script>
 
 <style lang="scss">
-
 :root {
   --akita-violet: #7030a0;
-  --akita-pink: #FF2EA0;
+  --akita-pink: #ff2ea0;
   --akita-blue: #00b0f0;
   --akita-dark: #3b3838;
   --akita-grey: #d9d9d9;
@@ -40,7 +39,9 @@ ul {
   padding-left: 0;
 }
 
-button, button:active, button:focus {
+button,
+button:active,
+button:focus {
   outline: none;
 }
 button::-moz-focus-inner {
@@ -49,7 +50,7 @@ button::-moz-focus-inner {
 
 .title {
   font-size: 50px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   line-height: 1.2;
   color: #000;
@@ -59,7 +60,7 @@ button::-moz-focus-inner {
   font-size: 22px;
   line-height: 1.3;
   margin-bottom: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #000;
 }
 
@@ -72,14 +73,14 @@ button::-moz-focus-inner {
 }
 
 .lighter {
-  font-weight:lighter;
+  font-weight: lighter;
 }
 
 .right {
   text-align: right;
 }
 
-@media (max-width:1500px)  {
+@media (max-width: 1500px) {
   .title {
     font-size: 40px;
   }
@@ -107,7 +108,6 @@ button::-moz-focus-inner {
   .title {
     font-size: 25px;
   }
-
   .contain {
     padding: 0 15px;
   }

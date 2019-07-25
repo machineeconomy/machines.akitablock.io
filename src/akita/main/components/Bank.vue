@@ -60,21 +60,22 @@ export default {
 <style lang="scss" scoped>
 .bank {
   padding-bottom: 100px;
-  background: url("../../../assets/img/machineChain.png") no-repeat -30% calc(70% + 50px);
+  margin-bottom: 100px;
+  background: url("../../../assets/img/machineChain.png") no-repeat -30% 70%;
   background-size: 50%;
 }
 
 .top {
-  padding: 50px 90px 50px 0;
+  padding: 0 90px 50px 0;
 }
 
 .column {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .block {
-    width: 800px;
+  width: 800px;
 }
 
 h2 {
@@ -91,15 +92,15 @@ h2 {
 }
 
 @media (max-width: 1300px) {
-    .bank {
-        background-size: 55%;
-    }
+  .bank {
+    background-size: 55%;
+  }
   .top {
     padding: 30px 90px 30px 0;
   }
   .block {
     width: 600px;
-    }
+  }
   .list__item {
     margin-top: 30px;
   }
@@ -107,14 +108,14 @@ h2 {
 
 @media (max-width: 1100px) {
   .bank {
-        background: none;
-    }
+    background: none;
+  }
   .top {
     padding: 30px 0;
   }
   .block {
     width: 100%;
-    }
+  }
 }
 </style>
 

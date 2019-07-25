@@ -63,11 +63,12 @@ export default {
 
 <style lang="scss" scoped>
 .evolution {
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 .top {
-  padding: 50px 90px 50px 0;
+  margin-top: 50px;
+  padding: 0 90px 50px 0;
 }
 
 .column {
