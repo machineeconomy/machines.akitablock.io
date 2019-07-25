@@ -70,7 +70,7 @@ footer {
   right: 0;
   width: 50%;
   height: 155%;
-  background: url("./../../../public/MachineChain.png") no-repeat;
+  background: url("../../assets/img/MachineChain.png") no-repeat;
   background-size: 1400px;
 }
 
@@ -97,19 +97,19 @@ footer {
 }
 
 .linkedIn {
-  background: url("./../../../public/linkedin_logo.png");
+  background: url("../../assets/img/icons/linkedin_logo.png");
 }
 
 .twitter {
-  background: url("./../../../public/twitter_logo.png");
+  background: url("../../assets/img/icons/twitter_logo.png");
 }
 
 .gitHub {
-  background: url("./../../../public/github_logo.png");
+  background: url("../../assets/img/icons/github_logo.png");
 }
 
 .iota {
-  background: url("./../../../public/Iota_logo.png");
+  background: url("../../assets/img/icons/Iota_logo.png");
 }
 
 .network__link {

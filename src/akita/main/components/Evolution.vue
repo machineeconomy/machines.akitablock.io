@@ -20,7 +20,7 @@
             >{{item.text}}</li>
           </ul>
         </div>
-        <img class="img" src="./../../../../public/oldMachine.jpg" alt="old machine" />
+        <img class="img" src="../../../assets/img/oldMachine.jpg" alt="old machine" />
       </div>
     </div>
   </section>
@@ -35,24 +35,24 @@ export default {
         {
           text:
             "Machines have to be managed and updated to run correctly. Security of valuable information and data can be guaranteed.",
-          img: require("./../../../../public/clock.png"),
+          img: require("../../../assets/img/icons/clock-p.png"),
           id: 1
         },
         {
           text: "Just-in-time and global production is an industry standard.",
-          img: require("./../../../../public/money.png"),
+          img: require("../../../assets/img/icons/money-p.png"),
           id: 2
         },
         {
           text:
             "Machines depend on financial service providers and traditional banks that charge enormous fees, do not operate on the weekends and take days to process cross-country transactions.",
-          img: require("./../../../../public/people.png"),
+          img: require("../../../assets/img/icons/people-p.png"),
           id: 3
         },
         {
           text:
             "There are no global standards or networks architectures. Convert data form sources, formats and mediums like paper.",
-          img: require("./../../../../public/network.png"),
+          img: require("../../../assets/img/icons/network-p.png"),
           id: 4
         }
       ]
@@ -63,7 +63,6 @@ export default {
 
 <style lang="scss" scoped>
 .evolution {
-  position: relative;
   padding-bottom: 100px;
 }
 

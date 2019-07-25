@@ -80,7 +80,7 @@ p {
   top: 100px;
   width: 40vw;
   height: 40vw;
-  background: url("./../../../public/sedan.png");
+  background: url("../../assets/img/sedan.png");
   background-size: 100%;
 }
 
