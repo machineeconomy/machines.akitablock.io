@@ -7,11 +7,11 @@
         <br />beyond blockchain
       </h1>
       <div class="info">
-        <p class="text normal">Blockchain promised faster, cheaper and global transactions.</p>
+        <p class="text">Blockchain promised faster, cheaper and global transactions.</p>
         <p
-          class="text normal"
+          class="text"
         >Machine bank accounts for cars, drones, gas stations and other devices enable to machines to directly buy & sell machine-to-machine (M2M) services. Machine economy.</p>
-        <p class="text normal">Turn your car into an asset.</p>
+        <p class="text">Turn your car into an asset.</p>
       </div>
       <div class="btn__trailer" @click="popup">
         <div class="triangle"></div>

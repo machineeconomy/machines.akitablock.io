@@ -4,7 +4,7 @@
       <div class="info">
         <h2 class="title">Roadmap</h2>
         <p
-          class="text normal"
+          class="text"
         >Machines were invented to increase productivity. Since the industrial revolution they have increased in numbers, became…</p>
       </div>
       <div class="map">

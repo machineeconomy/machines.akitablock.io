@@ -68,14 +68,6 @@ button::-moz-focus-inner {
   font-weight: bold;
 }
 
-.normal {
-  font-weight: normal;
-}
-
-.lighter {
-  font-weight: lighter;
-}
-
 .right {
   text-align: right;
 }
