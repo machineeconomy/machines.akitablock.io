@@ -103,7 +103,6 @@ export default {
 
 <style lang="scss" scoped>
 .people {
-  padding-bottom: 200px;
   background: #eee;
 }
 

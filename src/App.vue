@@ -39,15 +39,6 @@ ul {
   padding-left: 0;
 }
 
-button,
-button:active,
-button:focus {
-  outline: none;
-}
-button::-moz-focus-inner {
-  border: 0;
-}
-
 .title {
   font-size: 50px;
   font-family: "Montserrat", sans-serif;
