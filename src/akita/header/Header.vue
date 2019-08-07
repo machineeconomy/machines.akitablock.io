@@ -2,10 +2,7 @@
   <header>
     <div class="contain relative">
       <Navigation />
-      <h1 class="title">
-        Machine bank
-        <br />beyond blockchain
-      </h1>
+      <h1 class="title">{{title}}</h1>
       <div class="info">
         <p class="text">Blockchain promised faster, cheaper and global transactions.</p>
         <p
@@ -17,7 +14,9 @@
         <div class="triangle"></div>
         <span>Watch Trailer</span>
       </div>
-      <div class="background"></div>
+      <transition name="animation">
+        <div class="background"></div>
+      </transition>
     </div>
     <trailer :isOpen="isOpen" @popup="popup" />
   </header>
@@ -26,22 +25,62 @@
 <script>
 import Navigation from "./components/Navigation";
 import Trailer from "./components/Trailer";
+import { setTimeout, setInterval, clearTimeout } from "timers";
 
 export default {
   name: "Header",
+
   components: {
     Navigation,
     Trailer
   },
+
   data() {
     return {
-      isOpen: false
+      isOpen: false,
+      titleList: ["machine bank", "beyond blockchain"],
+      item: 0,
+      letters: 0
     };
   },
+
+  computed: {
+    title() {
+      let timerId = setTimeout(() => {
+        this.letters += 1;
+      }, 200);
+
+      if (this.letters === this.titleList[this.item].length) {
+        clearTimeout(timerId);
+        setTimeout(() => {
+          this.letters = 0;
+          this.item += 1;
+          if (this.item === this.titleList.length) {
+            this.item = 0;
+          }
+        }, 3000);
+      }
+
+      return this.titleAnimation(this.item, this.letters);
+    }
+  },
+
   methods: {
     popup() {
       this.isOpen = !this.isOpen;
+    },
+
+    smoothly() {
+      document.querySelector(".background").style.opacity = 1;
+    },
+
+    titleAnimation(item, letters) {
+      return this.titleList[item].slice(0, letters);
     }
+  },
+
+  mounted() {
+    setTimeout(() => this.smoothly(), 100);
   }
 };
 </script>
@@ -63,6 +102,7 @@ h1 {
   color: #fff;
   text-transform: uppercase;
   margin: 150px 0 30px;
+  height: 100px;
 }
 
 .info {
@@ -82,6 +122,8 @@ p {
   height: 40vw;
   background: url("../../assets/img/sedan.png");
   background-size: 100%;
+  opacity: 0;
+  transition: 1s;
 }
 
 .btn__trailer {

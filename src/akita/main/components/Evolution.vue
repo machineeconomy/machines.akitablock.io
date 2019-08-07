@@ -63,7 +63,7 @@ export default {
 
 <style lang="scss" scoped>
 .evolution {
-  padding-bottom: 200px;
+  padding-bottom: 250px;
 }
 
 .top {

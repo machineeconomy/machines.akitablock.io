@@ -162,6 +162,9 @@ h3 {
 }
 
 @media (max-width: 1000px) {
+  .info {
+    padding: 20px 0 50px;
+  }
   .block {
     display: block;
   }

@@ -60,7 +60,7 @@ export default {
 <style lang="scss" scoped>
 .bank {
   padding-bottom: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 210px;
   background: url("../../../assets/img/machineChain.png") no-repeat -30% 70%;
   background-size: 50%;
 }
