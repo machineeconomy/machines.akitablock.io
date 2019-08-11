@@ -1,9 +1,15 @@
 <template>
   <header>
     <div class="contain relative">
-      <Navigation />
+      <navigation />
       <h1 class="title">
-        <span>{{title}}</span>
+        <span>
+          <textAnimation
+            :textList="['machine bank', 'beyond blockchain']"
+            :writingSpeed="50"
+            :changingSpeed="4000"
+          />
+        </span>
       </h1>
       <div class="info">
         <p class="text">Blockchain promised faster, cheaper and global transactions.</p>
@@ -16,6 +22,7 @@
         <div class="triangle"></div>
         <span>Watch Trailer</span>
       </div>
+      <timer :timeEnd="new Date(2020, 0)" />
       <div class="background"></div>
     </div>
     <trailer :isOpen="isOpen" @popup="popup" />
@@ -25,6 +32,8 @@
 <script>
 import Navigation from "./components/Navigation";
 import Trailer from "./components/Trailer";
+import TextAnimation from "./components/TextAnimation";
+import Timer from "./components/Timer";
 import { setTimeout, setInterval, clearTimeout } from "timers";
 
 export default {
@@ -32,23 +41,15 @@ export default {
 
   components: {
     Navigation,
-    Trailer
+    Trailer,
+    TextAnimation,
+    Timer
   },
 
   data() {
     return {
-      isOpen: false,
-      titleList: ["machine bank", "beyond blockchain"],
-      item: 0,
-      letters: 1,
-      isDelete: false
+      isOpen: false
     };
-  },
-
-  computed: {
-    title() {
-      return this.titleList[this.item].slice(0, this.letters);
-    }
   },
 
   methods: {
@@ -58,32 +59,10 @@ export default {
 
     smoothly() {
       document.querySelector(".background").style.opacity = 1;
-    },
-
-    titleAnimation() {
-      if (!this.isDelete) this.letters += 1;
-      else this.letters -= 1;
-
-      if (this.letters === this.titleList[this.item].length) {
-        setTimeout(() => {
-          this.isDelete = true;
-          this.letters = this.titleList[this.item].length;
-        }, 4000)
-      }
-
-      else if (this.letters === 0) {
-        this.isDelete = false;
-        this.item += 1;
-        
-        if (this.item === this.titleList.length) {
-          this.item = 0;
-        }
-      }
     }
   },
 
   mounted() {
-    setInterval(() => this.titleAnimation(), 50);
     setTimeout(() => this.smoothly(), 100);
   }
 };
