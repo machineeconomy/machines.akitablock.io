@@ -19,24 +19,24 @@
 
 <script>
 export default {
-  name: "MobileNavigation",
-  props: ["navigation"],
+  name: 'MobileNavigation',
+  props: ['navigation'],
   data() {
     return {
       isOpen: false
-    };
+    }
   },
   methods: {
     openPopup() {
-      this.isOpen = !this.isOpen;
+      this.isOpen = !this.isOpen
     },
     scroll(e) {
       document
         .querySelector(e.target.attributes.path.value)
-        .scrollIntoView({ block: "start", behavior: "smooth" });
+        .scrollIntoView({ block: 'start', behavior: 'smooth' })
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

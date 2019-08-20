@@ -15,14 +15,14 @@
 </template>
 
 <script>
-import Contacts from "./components/Contacts";
+import Contacts from './components/Contacts'
 
 export default {
-  name: "Footer",
+  name: 'Footer',
   components: {
     Contacts
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

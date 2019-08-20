@@ -30,14 +30,14 @@
 </template>
 
 <script>
-import Navigation from "./components/Navigation";
-import Trailer from "./components/Trailer";
-import TextAnimation from "./components/TextAnimation";
-import Timer from "./components/Timer";
-import { setTimeout, setInterval, clearTimeout } from "timers";
+import Navigation from './components/Navigation'
+import Trailer from './components/Trailer'
+import TextAnimation from './components/TextAnimation'
+import Timer from './components/Timer'
+import { setTimeout, setInterval, clearTimeout } from 'timers'
 
 export default {
-  name: "Header",
+  name: 'Header',
 
   components: {
     Navigation,
@@ -49,23 +49,23 @@ export default {
   data() {
     return {
       isOpen: false
-    };
+    }
   },
 
   methods: {
     popup() {
-      this.isOpen = !this.isOpen;
+      this.isOpen = !this.isOpen
     },
 
     smoothly() {
-      document.querySelector(".background").style.opacity = 1;
+      document.querySelector('.background').style.opacity = 1
     }
   },
 
   mounted() {
-    setTimeout(() => this.smoothly(), 100);
+    setTimeout(() => this.smoothly(), 100)
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

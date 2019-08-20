@@ -35,84 +35,84 @@
 
 <script>
 export default {
-  name: "Roadmap",
+  name: 'Roadmap',
   data() {
     return {
       roadmap: [
         {
           top: true,
           finished: true,
-          year: "2017",
-          title: "Distributed Data Market",
-          img: require("../../../assets/img/roadmap/dataMarket.png"),
-          alt: "Distributed Data Market",
+          year: '2017',
+          title: 'Distributed Data Market',
+          img: require('../../../assets/img/roadmap/dataMarket.png'),
+          alt: 'Distributed Data Market',
           id: 1
         },
         {
           top: true,
           finished: true,
-          year: "2018",
-          title: "Industry 4.0 Audit Trail",
-          img: require("../../../assets/img/roadmap/dataMarket.png"),
-          alt: "Industry 4.0 Audit Trail",
+          year: '2018',
+          title: 'Industry 4.0 Audit Trail',
+          img: require('../../../assets/img/roadmap/dataMarket.png'),
+          alt: 'Industry 4.0 Audit Trail',
           id: 2
         },
         {
           top: true,
           finished: true,
-          year: "2018",
-          title: "ID & Access Solution",
-          img: require("../../../assets/img/roadmap/dataMarket.png"),
-          alt: "ID & Access Solution",
+          year: '2018',
+          title: 'ID & Access Solution',
+          img: require('../../../assets/img/roadmap/dataMarket.png'),
+          alt: 'ID & Access Solution',
           id: 3
         },
         {
           top: true,
           finished: true,
-          year: "2019",
-          title: "Automated M2M payment",
-          img: require("../../../assets/img/roadmap/dataMarket.png"),
-          alt: "Automated M2M payment",
+          year: '2019',
+          title: 'Automated M2M payment',
+          img: require('../../../assets/img/roadmap/dataMarket.png'),
+          alt: 'Automated M2M payment',
           id: 4
         },
         {
           top: false,
           finished: true,
-          year: "2019",
-          title: "Virtual Blockchain Lab",
-          img: require("../../../assets/img/roadmap/dataMarket.png"),
-          alt: "Virtual Blockchain Lab",
+          year: '2019',
+          title: 'Virtual Blockchain Lab',
+          img: require('../../../assets/img/roadmap/dataMarket.png'),
+          alt: 'Virtual Blockchain Lab',
           id: 5
         },
         {
           top: false,
           finished: false,
-          year: "2020",
-          title: "Physical Blockchain Lab",
-          img: require("../../../assets/img/roadmap/dataMarket.png"),
-          alt: "Physical Blockchain Lab",
+          year: '2020',
+          title: 'Physical Blockchain Lab',
+          img: require('../../../assets/img/roadmap/dataMarket.png'),
+          alt: 'Physical Blockchain Lab',
           id: 6
         },
         {
           top: false,
           finished: false,
-          year: "2021",
-          title: "ID & Access Solution",
-          img: require("../../../assets/img/roadmap/dataMarket.png"),
-          alt: "ID & Access Solution",
+          year: '2021',
+          title: 'ID & Access Solution',
+          img: require('../../../assets/img/roadmap/dataMarket.png'),
+          alt: 'ID & Access Solution',
           id: 7
         },
         {
           top: false,
           finished: false,
-          year: "2022",
-          title: "Machine bank as a service",
-          img: require("../../../assets/img/roadmap/dataMarket.png"),
-          alt: "Machine bank as a service",
+          year: '2022',
+          title: 'Machine bank as a service',
+          img: require('../../../assets/img/roadmap/dataMarket.png'),
+          alt: 'Machine bank as a service',
           id: 8
-        },
+        }
       ]
-    };
+    }
   },
   computed: {
     topFilter() {
@@ -122,7 +122,7 @@ export default {
       return this.roadmap.filter(obj => !obj.top);
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

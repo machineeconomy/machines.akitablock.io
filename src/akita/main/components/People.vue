@@ -46,59 +46,59 @@
 
 <script>
 export default {
-  name: "People",
+  name: 'People',
   data() {
     return {
       team: [
-        { name: "Nino Ulrich", description: "Co-Founder", key: 1 },
-        { name: "Janina Ulrich", description: "Co-Founder", key: 2 },
-        { name: "Felix Walter", description: "Business Dev.", key: 3 },
-        { name: "Dr.Christian Berning", description: "Banking Expert", key: 4 },
-        { name: "Sebastian Wolff", description: "Sales & Marketing", key: 5 },
-        { name: "Sebastian Heusser", description: "Blockchain Dev.", key: 6 },
-        { name: "Martin Neubauer", description: "Blockchain Dev.", key: 7 },
-        { name: "Pavel Maxuta", description: "Blockchain Dev.", key: 8 }
+        { name: 'Nino Ulrich', description: 'Co-Founder', key: 1 },
+        { name: 'Janina Ulrich', description: 'Co-Founder', key: 2 },
+        { name: 'Felix Walter', description: 'Business Dev.', key: 3 },
+        { name: 'Dr.Christian Berning', description: 'Banking Expert', key: 4 },
+        { name: 'Sebastian Wolff', description: 'Sales & Marketing', key: 5 },
+        { name: 'Sebastian Heusser', description: 'Blockchain Dev.', key: 6 },
+        { name: 'Martin Neubauer', description: 'Blockchain Dev.', key: 7 },
+        { name: 'Pavel Maxuta', description: 'Blockchain Dev.', key: 8 }
       ],
       advisors: [
-        { name: "Ulrich Kemp", description: "Sales & Marketing", key: 1 },
-        { name: "Nico Konrad", description: "STO Services", key: 2 },
-        { name: "Yasmin Ulrich", description: "Payments & Banking", key: 3 },
-        { name: "Hirad Horoufchin", description: "Investment", key: 4 },
-        { name: "Loy", description: "Legal & Strategy", key: 5 },
-        { name: "CK Tong", description: "International Trade", key: 6 },
-        { name: "Mina Chung", description: "Banking & Customs", key: 7 },
+        { name: 'Ulrich Kemp', description: 'Sales & Marketing', key: 1 },
+        { name: 'Nico Konrad', description: 'STO Services', key: 2 },
+        { name: 'Yasmin Ulrich', description: 'Payments & Banking', key: 3 },
+        { name: 'Hirad Horoufchin', description: 'Investment', key: 4 },
+        { name: 'Loy', description: 'Legal & Strategy', key: 5 },
+        { name: 'CK Tong', description: 'International Trade', key: 6 },
+        { name: 'Mina Chung', description: 'Banking & Customs', key: 7 },
         {
-          name: "Yuanfei Zhu",
-          description: "Blockchain Dev & Investment",
+          name: 'Yuanfei Zhu',
+          description: 'Blockchain Dev & Investment',
           key: 8
         },
-        { name: "Kyle Weber", description: "Automotive & EV", key: 9 },
+        { name: 'Kyle Weber', description: 'Automotive & EV', key: 9 },
         {
-          name: "Tobias Masiak ",
-          description: "Academic & Production",
+          name: 'Tobias Masiak ',
+          description: 'Academic & Production',
           key: 10
         },
-        { name: "MORE", description: "R&D", key: 11 }
+        { name: 'MORE', description: 'R&D', key: 11 }
       ],
       partners: [
-        { name: "DLT Capital", key: 1 },
-        { name: "unitedcrowd", key: 2 },
-        { name: "Dentons", key: 3 },
-        { name: "Satori", key: 4 },
-        { name: "Homerun Capital", key: 5 },
-        { name: "Zema", key: 6 },
-        { name: "Brandfocus (Monkkey)", key: 7 },
-        { name: "MORE", key: 8 }
+        { name: 'DLT Capital', key: 1 },
+        { name: 'unitedcrowd', key: 2 },
+        { name: 'Dentons', key: 3 },
+        { name: 'Satori', key: 4 },
+        { name: 'Homerun Capital', key: 5 },
+        { name: 'Zema', key: 6 },
+        { name: 'Brandfocus (Monkkey)', key: 7 },
+        { name: 'MORE', key: 8 }
       ],
       news: [
-        { name: "BTC-Echo", key: 1 },
-        { name: "Medium", key: 2 },
-        { name: "Cointelegraph", key: 3 },
-        { name: "MORE", key: 4 }
+        { name: 'BTC-Echo', key: 1 },
+        { name: 'Medium', key: 2 },
+        { name: 'Cointelegraph', key: 3 },
+        { name: 'MORE', key: 4 }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

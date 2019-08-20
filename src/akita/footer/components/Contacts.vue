@@ -35,34 +35,34 @@
 
 <script>
 export default {
-  name: "Contacts",
+  name: 'Contacts',
   data() {
     return {
       networks: [
         {
-          href: "https://twitter.com/AkitaBlock",
-          url: require("../../../assets/img/icons/twitter.png"),
+          href: 'https://twitter.com/AkitaBlock',
+          url: require('../../../assets/img/icons/twitter.png'),
           id: 1
         },
         {
-          href: "https://www.linkedin.com/in/nino-ulrich",
-          url: require("../../../assets/img/icons/linkedin.png"),
+          href: 'https://www.linkedin.com/in/nino-ulrich',
+          url: require('../../../assets/img/icons/linkedin.png'),
           id: 2
         },
         {
-          href: "https://github.com/machineeconomy",
-          url: require("../../../assets/img/icons/github.png"),
+          href: 'https://github.com/machineeconomy',
+          url: require('../../../assets/img/icons/github.png'),
           id: 3
         },
         {
-          href: "https://www.iota.org",
-          url: require("../../../assets/img/icons/iota.png"),
+          href: 'https://www.iota.org',
+          url: require('../../../assets/img/icons/iota.png'),
           id: 4
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

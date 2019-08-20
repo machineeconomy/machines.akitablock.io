@@ -28,37 +28,35 @@
 
 <script>
 export default {
-  name: "Evolution",
+  name: 'Evolution',
   data() {
     return {
       list: [
         {
-          text:
-            "Machines have to be managed and updated to run correctly. Security of valuable information and data can be guaranteed.",
-          img: require("../../../assets/img/icons/clock-p.png"),
+          text: 'Machines have to be managed and updated to run correctly. Security of valuable information and data can be guaranteed.',
+          img: require('../../../assets/img/icons/clock-p.png'),
           id: 1
         },
         {
-          text: "Just-in-time and global production is an industry standard.",
-          img: require("../../../assets/img/icons/money-p.png"),
+          text: 'Just-in-time and global production is an industry standard.',
+          img: require('../../../assets/img/icons/money-p.png'),
           id: 2
         },
         {
-          text:
-            "Machines depend on financial service providers and traditional banks that charge enormous fees, do not operate on the weekends and take days to process cross-country transactions.",
-          img: require("../../../assets/img/icons/people-p.png"),
+          text: 'Machines depend on financial service providers and traditional banks that charge enormous fees, do not operate on the weekends and take days to process cross-country transactions.',
+          img: require('../../../assets/img/icons/people-p.png'),
           id: 3
         },
         {
           text:
             "There are no global standards or networks architectures. Convert data form sources, formats and mediums like paper.",
-          img: require("../../../assets/img/icons/network-p.png"),
+          img: require('../../../assets/img/icons/network-p.png'),
           id: 4
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

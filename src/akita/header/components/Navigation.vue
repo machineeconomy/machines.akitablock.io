@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import MobileNavigation from "./MobileNavigation";
+import MobileNavigation from './MobileNavigation'
 
 export default {
-  name: "Navigation",
+  name: 'Navigation',
   components: {
     MobileNavigation
   },
@@ -24,46 +24,46 @@ export default {
     return {
       navigation: [
         {
-          text: "Problem",
-          path: ".evolution",
+          text: 'Problem',
+          path: '.evolution',
           id: 1
         },
         {
-          text: "Solution",
-          path: ".bank",
+          text: 'Solution',
+          path: '.bank',
           id: 2
         },
         {
-          text: "Product",
-          path: ".machines",
+          text: 'Product',
+          path: '.machines',
           id: 3
         },
         {
-          text: "Roadmap",
-          path: ".roadmap",
+          text: 'Roadmap',
+          path: '.roadmap',
           id: 4
         },
         {
-          text: "People",
-          path: ".people",
+          text: 'People',
+          path: '.people',
           id: 5
         },
         {
-          text: "Contact",
-          path: ".engage",
+          text: 'Contact',
+          path: '.engage',
           id: 6
         }
       ]
-    };
+    }
   },
   methods: {
     scroll(e) {
       document
         .querySelector(e.target.attributes.path.value)
-        .scrollIntoView({ block: "start", behavior: "smooth" });
+        .scrollIntoView({ block: 'start', behavior: 'smooth' })
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

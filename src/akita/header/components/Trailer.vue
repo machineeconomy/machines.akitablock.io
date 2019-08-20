@@ -21,9 +21,9 @@
 
 <script>
 export default {
-  name: "Trailer",
-  props: ["isOpen"]
-};
+  name: 'Trailer',
+  props: ['isOpen']
+}
 </script>
 
 <style lang="scss" scoped>

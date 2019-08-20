@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import { setTimeout } from "timers";
+import { setTimeout } from "timers"
 
 export default {
-  name: "Timer",
+  name: 'Timer',
 
   data() {
     return {
@@ -22,31 +22,31 @@ export default {
     };
   },
 
-  props: ["timeEnd"],
+  props: ['timeEnd'],
 
   methods: {
     startTimer() {
-      let timer = Math.floor((this.timeEnd - Date.now()) / 1000);
+      let timer = Math.floor((this.timeEnd - Date.now()) / 1000)
 
-      this.sec = timer % 60;
-      timer = Math.floor(timer / 60);
+      this.sec = timer % 60
+      timer = Math.floor(timer / 60)
 
-      this.min = timer % 60;
-      timer = Math.floor(timer / 60);
+      this.min = timer % 60
+      timer = Math.floor(timer / 60)
 
-      this.hour = timer % 24;
-      timer = Math.floor(timer / 24);
+      this.hour = timer % 24
+      timer = Math.floor(timer / 24)
 
-      this.day = timer;
+      this.day = timer
 
-      setTimeout(this.startTimer, 1000);
+      setTimeout(this.startTimer, 1000)
     }
   },
 
   mounted() {
-    this.startTimer();
+    this.startTimer()
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
